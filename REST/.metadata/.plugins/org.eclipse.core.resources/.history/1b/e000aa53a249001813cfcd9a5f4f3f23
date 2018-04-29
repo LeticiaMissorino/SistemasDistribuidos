@@ -1,0 +1,25 @@
+package br.com.rest.pessoa;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+
+@Path("pessoa")
+public class Pessoa {
+
+	@GET
+	@Path("nome={param1}/idade={param2}/peso={param3}/altura={param4}")
+	public String tabuada(@PathParam("param") String num) {
+
+		String result = "Tabuada: " + num + "<br>";
+		int mult = 0;
+		for (int x = 0; x <= 10; x++) {
+			mult = num * x;
+			result = result + num + "X" + x + "=" + mult + "<br>";
+
+		}
+		return result;
+
+	}
+	
+}

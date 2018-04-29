@@ -1,0 +1,23 @@
+package br.com.rest.dados;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import br.com.rest.util.Conexao;
+
+public class PessoaDB {
+
+	private Connection connection;
+	private PreparedStatement ps;
+	private ResultSet rs;
+	
+	
+	public PessoaDB(){
+		
+		connection = Conexao.getConnection();
+		
+	}
+	
+	
+}

@@ -1,0 +1,19 @@
+package br.com.rest.util;
+
+import br.com.rest.dados.PessoaDB;
+import br.com.rest.entidade.Pessoa;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+     Pessoa p = new Pessoa();
+     
+     p.setNome("teste");
+     p.setAltura(12);
+     
+     new PessoaDB().inserir(p);
+	}
+
+}

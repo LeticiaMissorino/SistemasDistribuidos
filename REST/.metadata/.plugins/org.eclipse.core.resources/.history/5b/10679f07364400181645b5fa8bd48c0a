@@ -1,0 +1,29 @@
+package br.com.rest.exercicio;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+
+@Path("triangulo")
+public class Triangulo {
+//	| b - c | < a < b + c 
+//	| a - c | < b < a + c 
+//	| a - b | < c < a + b 
+
+	@GET 
+	@Path("a={param1}/b={param2}/c={param3}")
+	public String tabuada(@PathParam("param1") int a, @PathParam("param2") int b,@PathParam("param3") int c){
+		String result ;
+		if ((a < b + c) &&( b < a + c) && (c < a+b)){
+			result = "Trata-se de um triangulo";
+		}else {
+			
+			result = "Não trata-se de um triangulo";
+		}
+		
+		
+		
+		return result;
+		
+	}
+}

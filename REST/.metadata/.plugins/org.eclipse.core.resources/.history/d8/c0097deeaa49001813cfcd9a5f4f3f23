@@ -1,0 +1,19 @@
+package br.com.rest.entidade;
+
+public class Pessoa {
+   private String nome ;
+   private int idade;
+   private float peso;
+   private float altura;
+   
+   public Pessoa(){}
+   
+   public Pessoa(String nome , int idade, float peso, float alt){
+	   
+	   this.nome = nome;
+	   this.idade= idade;
+	   this.peso = peso ;
+	   this.altura = alt;
+	   
+   }
+}
