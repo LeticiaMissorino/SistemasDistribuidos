@@ -1,0 +1,25 @@
+package packageDefault;
+
+import java.net.URL;
+
+public class Ex1Teste {
+
+	public static void main (String[] args){
+	
+		
+	}
+	
+	public static void imprimirText(String texto){
+		try {
+			URL url = new URL("http://localhost:8082/RestExemplo/rest/helloworld/show=" + texto);
+		
+		
+		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
+	
+}

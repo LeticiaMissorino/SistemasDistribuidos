@@ -1,0 +1,10 @@
+127.0.0.1 - - [03/May/2018:21:32:21 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [03/May/2018:21:32:52 -0300] "GET /RestExemplo/NewFile.html HTTP/1.1" 200 131
+0:0:0:0:0:0:0:1 - - [03/May/2018:21:33:47 -0300] "GET /RestExemplo/rest/json/get HTTP/1.1" 200 37
+0:0:0:0:0:0:0:1 - - [03/May/2018:21:34:10 -0300] "GET /RestExemplo/rest/json/get HTTP/1.1" 200 37
+0:0:0:0:0:0:0:1 - - [03/May/2018:21:34:11 -0300] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [03/May/2018:21:34:45 -0300] "GET /RestExemplo/rest/json/get HTTP/1.1" 200 37
+127.0.0.1 - - [03/May/2018:21:35:07 -0300] "GET /RestExemplo/rest/helloworld/show=Turma! HTTP/1.1" 200 30
+127.0.0.1 - - [03/May/2018:21:35:07 -0300] "GET /RestExemplo/rest/helloworld/somar/20/3 HTTP/1.1" 404 1010
+127.0.0.1 - - [03/May/2018:21:35:24 -0300] "POST /RestExemplo/rest/json/get HTTP/1.1" 405 1056
+127.0.0.1 - - [03/May/2018:21:35:44 -0300] "POST /RestExemplo/rest/json/post HTTP/1.1" 201 55

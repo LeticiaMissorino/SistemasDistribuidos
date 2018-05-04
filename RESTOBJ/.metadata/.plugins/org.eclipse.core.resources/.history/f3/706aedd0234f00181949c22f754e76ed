@@ -1,0 +1,15 @@
+package br.com.rest.teste;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+
+public class HelloWordResource {
+	@GET 
+	@Path("show={param}")
+	public String show(@PathParam("param") String msg){
+		String out = "Resultado: " + msg;
+		return out;
+		
+	}
+}
